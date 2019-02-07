@@ -1,4 +1,4 @@
-#Question
+### Question
 
 Given an array of integers, return indices of the two numbers such that they add up to a specific target.
 
@@ -13,7 +13,7 @@ return [0, 1].
 
 ***
 
-#How To Resolve
+### How To Resolve
 
 1. Two For-loop 
 2. HashMap
