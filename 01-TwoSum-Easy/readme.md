@@ -30,7 +30,7 @@ The possible combination as following:
 [7,11],[7,15]
 [11,15]
 
-Consequently, the outside loop will iterate from 2,7,11,the inside loop will iterate from the next number.
+Consequently, the outside loop will iterate from 2, 7, 11,the inside loop will iterate from the next number.
 Note that the final value will not be iterated in outside loop(since it had been already add) 
 We would not consider it in the outside loop.
 

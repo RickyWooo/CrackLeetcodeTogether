@@ -9,7 +9,7 @@ var twoSum = function(nums, target) {
     }
 };
 
-//then you found that will take O(n^2)
+// HashMap Solution
 
 var twoSum = function(nums, target) {
     let map = {};
