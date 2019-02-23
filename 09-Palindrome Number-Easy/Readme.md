@@ -2,6 +2,7 @@
 
 Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
 
+```json
 Example 1:
 
 Input: 121
@@ -17,16 +18,14 @@ Input: 10
 Output: false
 Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 Follow up:
+```
 
 Coud you solve it without converting the integer to a string?
 
 ***
 
-### How To Resolve
-
-1. [Method1, can be any algorithm or data structure]
-2. [Method2]
-
-### [Method]
+### Without stack solution
 
 statement
+
+

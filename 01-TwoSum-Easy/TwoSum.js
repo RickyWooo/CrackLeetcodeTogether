@@ -1,4 +1,4 @@
-// Two For-loop 
+// Nested For-loop 
 
 var twoSum = function(nums, target) {
     for ( let i=0 ; i<nums.length-1 ; i++){
