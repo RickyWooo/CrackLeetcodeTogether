@@ -31,21 +31,22 @@ The possible combination as following:
 [11,15]
 ```
 
-Consequently, the outside loop will iterate from 2, 7, 11,the inside loop will iterate from the next number to the end of array (7,11,15).
+Consequently, the outside loop will iterate from 2, 7, 11
+the inside loop will iterate 7,11,15
+from the next number to the end of array.
 
 **Note that the final value will not be iterated in outside loop(since it had been already add)**
 
-### 
+### Hash Table
 
 Since the Two for-loop method will take O(n<sup>2</sup>)
 
-the method with better Time Complexity is HashMap, store key and value into a map object
-
-**i.e. custom a map looks like number<->index. number: the value of arrey, index: the index of array**
+HashMap with better Time Complexity, store key and value into a map object
 
 ```json
 { 
-  "2":0,
+  "value1":index1,
+  "value2":index2
 }
 
 "
@@ -55,25 +56,27 @@ no ==> store the value and index into the map
 then iterate to next number...
 like the following procedure
 
-is (9-2) in the map? 
-no ==> store 2 and 0 into the map
-interate to the next nubmer :7
 
-Is (9-7) in the map? exist? not as undefined?
-yes ==> the value is 0, not as undefined
-If so, return the index of map[9-7] and 7.
-If not, store 7 in the map. 
+
+is (9-2) in the map? 
+no 
+==> store 2 as key and value as 0 into the map
+==> iterate to the next nubmer :7
+"
+
+{ 
+  "2":0,
+}
+
+"
+Is (9-7) in the map? 
+yes 
+==> the value is 0, not as undefined
+==> return the index of map[9-7] and index of 7 as results.
+
+no, 9-7 is not in the map
+==> store (9-7) as key and the corresponding index into the map
+==> iterate to the next number
 "
 
 ```
-
-Inside a for-loop, usually we set/store the value and index in the map at first,
-So that we have 3 different kinds of number:
-
-1. target: the given result, should be the sum of 2 separate numbers in the array
-2. check: the number which may be summand, if this number is not relative with current map, store it in the map
-3. store:  the number is stored in the custom map
-
-We can get the target = check + store as conclusion.
-if the given taget minus check appears in the map, then we find the combination.
-Or we store the "check" in the map as a "store" number.
