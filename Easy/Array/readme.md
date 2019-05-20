@@ -39,7 +39,7 @@ We would not consider it in the outside loop.
 
 ### 
 
-Since the Two for-loop method will take O(n^2)
+Since the Two for-loop method will take O(n<sup>2</sup>)
 
 the method with better Time Complexity is HashMap, store key and value into a map object
 
