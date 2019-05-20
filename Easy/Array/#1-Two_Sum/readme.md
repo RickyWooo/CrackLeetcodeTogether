@@ -45,30 +45,31 @@ HashMap with better Time Complexity, store key and value into a map object
 
 ```json
 { 
-  "value1":index1,
-  "value2":index2
+  "value1":0,
+  "value2":1
 }
 
-"
+
 Is target minus number is well defined in the map?
-yes ==> then we found the answer
-no ==> store the value and index into the map
-then iterate to next number...
-like the following procedure
+yes 
+==> then we find the result
+no
+ ==> store the value and index into the map
+then iterate to next number...until we find the result
 
 
 
 is (9-2) in the map? 
 no 
 ==> store 2 as key and value as 0 into the map
-==> iterate to the next nubmer :7
-"
+==> iterate to the next nubmer 7
+
 
 { 
-  "2":0,
+  "2":0
 }
 
-"
+
 Is (9-7) in the map? 
 yes 
 ==> the value is 0, not as undefined
@@ -77,6 +78,6 @@ yes
 no, 9-7 is not in the map
 ==> store (9-7) as key and the corresponding index into the map
 ==> iterate to the next number
-"
+
 
 ```
