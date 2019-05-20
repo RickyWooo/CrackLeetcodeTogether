@@ -4,20 +4,22 @@ Given an array of integers, return indices of the two numbers such that they add
 
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
 
+```json
 Example:
 
 Given nums = [2, 7, 11, 15], target = 9,
 
 Because nums[0] + nums[1] = 2 + 7 = 9,
 return [0, 1].
+```
 
 ***
 
 ### Two For-loop
 
-First idea flash through our mind may be creating two arrays, and implement two for-loops as nested for loops, iterate 
+Hello, Leetcode! This may be the first step to Leetcode, do not be scared and crack it together.
 
-it until you find the sum of two intergers, then get the indices from the values.
+The first idea flash through our mind may be creating two arrays, implement nested for-loops and iterate it until you find the sum of two intergers, then we can try to get the indices from the values.
 
 ```json
 Given nums = [2, 7, 11, 15], target = 9,
@@ -29,13 +31,9 @@ The possible combination as following:
 [11,15]
 ```
 
-Consequently, the outside loop will iterate from 2, 7, 11,the inside loop will iterate from the next number until 
-
-touching the end of array.
+Consequently, the outside loop will iterate from 2, 7, 11,the inside loop will iterate from the next number to the end of array (7,11,15).
 
 **Note that the final value will not be iterated in outside loop(since it had been already add)**
-
-We would not consider it in the outside loop.
 
 ### 
 
